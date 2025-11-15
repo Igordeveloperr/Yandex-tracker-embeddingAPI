@@ -2,7 +2,18 @@
 
 API для генерации эмбеддингов на основе модели ai-forever/ru-en-RoSBERTa
 
-## Установка
+## Установка через docker
+
+1. Сборка Docker-образа
+docker build -t yandex-tracker-embedding-api .
+
+2. Запуск контейнера
+docker run -d -p 8000:8000 yandex-tracker-embedding-api
+
+3. Запуск контейнера с GPU (если доступна и установлен Docker с поддержкой GPU)
+docker run -d -p 8000:8000 --gpus all yandex-tracker-embedding-api
+
+## Установка классическая
 
 1. Установите зависимости:
 ```bash
