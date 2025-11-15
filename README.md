@@ -13,6 +13,8 @@ docker run -d -p 8000:8000 yandex-tracker-embedding-api
 3. Запуск контейнера с GPU (если доступна и установлен Docker с поддержкой GPU)
 docker run -d -p 8000:8000 --gpus all yandex-tracker-embedding-api
 
+4. Теперь API доступно по http://127.0.0.1:8000/
+
 ## Установка классическая
 
 1. Установите зависимости:
